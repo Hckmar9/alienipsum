@@ -41,6 +41,6 @@ I created an Alien Ipsum Generator since I love aliens and was tired of the othe
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License.
 
 Made with 👽 by [Hckmar](https://github.com/Hckmar9)
