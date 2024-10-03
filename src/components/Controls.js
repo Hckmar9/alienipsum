@@ -12,7 +12,9 @@ export const Controls = ({
       type="number"
       id="paragraphs"
       value={paragraphs}
-      onChange={(e) => setParagraphs(e.target.value)}
+      onChange={(e) =>
+        setParagraphs(Math.max(1, Math.min(10, parseInt(e.target.value) || 1)))
+      }
       min="1"
       max="10"
     />

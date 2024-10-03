@@ -36,8 +36,12 @@ const AlienIpsumGenerator = () => {
         generateAlienIpsum={generateAlienIpsum}
         isLoading={isLoading}
       />
-      <AlienText text={alienText} />
-      {alienText && (
+      {isLoading ? (
+        <div className="loading">Generating alien text...</div>
+      ) : (
+        <AlienText text={alienText} />
+      )}
+      {alienText && !isLoading && (
         <CopyButton
           text={alienText}
           onCopy={copyToClipboard}
